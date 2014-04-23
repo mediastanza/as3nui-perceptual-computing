@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+	<id>com.as3nui.RealSense</id>
+	<versionNumber>0.0.1</versionNumber>
+	<platforms>
+		<platform name="Windows-x86">
+			<applicationDeployment>
+				<nativeLibrary>PcExtension.dll</nativeLibrary>
+				<initializer>AirPcInitializer</initializer>
+				<finalizer>AirPcFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+	</platforms>
+</extension>
