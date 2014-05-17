@@ -54,7 +54,7 @@ extern "C"
 		FRENewObject((const uint8_t*)"com.as3nui.data.GeoNode", 0, NULL, &freGeoNode, NULL);
 
 		FRESetObjectProperty(freGeoNode, (const uint8_t*) "confidence",    createFREObjectForUnsignedInt(node.confidence), NULL);
-		FRESetObjectProperty(freGeoNode, (const uint8_t*) "positionImage", createFREObjectForVector3(node.positionImage.x, node.positionImage.y, node.positionImage.z), NULL);
+		FRESetObjectProperty(freGeoNode, (const uint8_t*) "positionImage", createFREObjectForVector3(node.positionImage.x, node.positionImage.y, node.positionWorld.z), NULL);
 		FRESetObjectProperty(freGeoNode, (const uint8_t*) "positionWorld", createFREObjectForVector3(node.positionWorld.x, node.positionWorld.y, node.positionWorld.z), NULL);
 
 		return freGeoNode;
@@ -70,7 +70,7 @@ extern "C"
 		FRENewObject((const uint8_t*)"com.as3nui.data.GeoNode", 0, NULL, &freGeoNode, NULL);
 
 		FRESetObjectProperty(freGeoNode, (const uint8_t*) "confidence",    createFREObjectForUnsignedInt(node.confidence), NULL);
-		FRESetObjectProperty(freGeoNode, (const uint8_t*) "positionImage", createFREObjectForVector3(node.positionImage.x, node.positionImage.y, node.positionImage.z), NULL);
+		FRESetObjectProperty(freGeoNode, (const uint8_t*) "positionImage", createFREObjectForVector3(node.positionImage.x, node.positionImage.y, node.positionWorld.z), NULL);
 		FRESetObjectProperty(freGeoNode, (const uint8_t*) "positionWorld", createFREObjectForVector3(node.positionWorld.x, node.positionWorld.y, node.positionWorld.z), NULL);
 
 		return freGeoNode;
